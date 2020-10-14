@@ -3,6 +3,6 @@
  
  ------------------------------------------
  
- ![alt text](https://github.com/Hobby4life/Zonesize/blob/main/zonesize.png
+ ![alt text](https://github.com/Hobby4life/Zonesize/blob/main/zonesize.png)
  
  Tool for creating widgets.
