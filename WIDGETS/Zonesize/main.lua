@@ -36,13 +36,20 @@ function refresh(pie)
   
   lcd.setColor(CUSTOM_COLOR, lcd.RGB(248,252,248))
   
-  lcd.drawText(pie.zone.x,pie.zone.y,"X"..pie.zone.x..",Y"..pie.zone.y, CUSTOM_COLOR + SHADOWED + SMLSIZE + LEFT)
-  lcd.drawText(pie.zone.x + pie.zone.w,pie.zone.y,"X"..(pie.zone.x+pie.zone.w)..",Y"..pie.zone.y, CUSTOM_COLOR + SHADOWED + SMLSIZE + RIGHT)
+  lcd.drawText(pie.zone.x,pie.zone.y,"X"..pie.zone.x, CUSTOM_COLOR + SHADOWED + SMLSIZE + LEFT)
+  lcd.drawText(pie.zone.x,pie.zone.y+10,"Y"..pie.zone.y, CUSTOM_COLOR + SHADOWED + SMLSIZE + LEFT)
   
-  lcd.drawText(pie.zone.x + (pie.zone.w / 2),pie.zone.y + (pie.zone.h /2) - 8,"Zone W"..pie.zone.w.. ",H"..pie.zone.h, CUSTOM_COLOR + SHADOWED + SMLSIZE + CENTER)
+  lcd.drawText(pie.zone.x + pie.zone.w,pie.zone.y,"X"..(pie.zone.x+pie.zone.w), CUSTOM_COLOR + SHADOWED + SMLSIZE + RIGHT)
+  lcd.drawText(pie.zone.x + pie.zone.w,pie.zone.y+10,"Y"..pie.zone.y, CUSTOM_COLOR + SHADOWED + SMLSIZE + RIGHT)
   
-  lcd.drawText(pie.zone.x,(pie.zone.y + pie.zone.h) - 16,"X"..pie.zone.x..",Y"..(pie.zone.y+pie.zone.h), CUSTOM_COLOR + SHADOWED + SMLSIZE + LEFT)
-  lcd.drawText(pie.zone.x + pie.zone.w,(pie.zone.y + pie.zone.h) - 16,"X"..(pie.zone.x+pie.zone.w)..",Y"..(pie.zone.y + pie.zone.h), CUSTOM_COLOR + SHADOWED + SMLSIZE + RIGHT)
+  lcd.drawText(pie.zone.x + (pie.zone.w / 2),pie.zone.y + (pie.zone.h /2) - 10,"W"..pie.zone.w, CUSTOM_COLOR + SHADOWED + SMLSIZE + CENTER)
+  lcd.drawText(pie.zone.x + (pie.zone.w / 2),pie.zone.y + (pie.zone.h /2) ,"H"..pie.zone.h, CUSTOM_COLOR + SHADOWED + SMLSIZE + CENTER)
+  
+  lcd.drawText(pie.zone.x,(pie.zone.y + pie.zone.h) - 26,"X"..pie.zone.x, CUSTOM_COLOR + SHADOWED + SMLSIZE + LEFT)
+  lcd.drawText(pie.zone.x,(pie.zone.y + pie.zone.h) - 16,"Y"..(pie.zone.y+pie.zone.h), CUSTOM_COLOR + SHADOWED + SMLSIZE + LEFT)
+  
+  lcd.drawText(pie.zone.x + pie.zone.w,(pie.zone.y + pie.zone.h) - 26,"X"..(pie.zone.x+pie.zone.w), CUSTOM_COLOR + SHADOWED + SMLSIZE + RIGHT)
+  lcd.drawText(pie.zone.x + pie.zone.w,(pie.zone.y + pie.zone.h) - 16,"Y"..(pie.zone.y + pie.zone.h), CUSTOM_COLOR + SHADOWED + SMLSIZE + RIGHT)
   
 end
 
